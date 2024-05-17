@@ -8,7 +8,9 @@ function Store() {
   const { cantini_list, getTotalAmount } = useContext(storeContext)
   return (
     <div className=' text-black bg-[#ede5d9]'>
-      <NavStore />
+      <div className=' sticky top-0'>
+        <NavStore />
+      </div>
       <div>
         <div className='h-[200px] bg-[#ede5d9] flex justify-center items-center mb-8 border-b'>
           <h1 className=' md:text-7xl text-4xl text-green-900 font-normal'>All Products</h1>

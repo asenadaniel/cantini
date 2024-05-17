@@ -23,7 +23,7 @@ function NavStore() {
 
   return (
     <div className='bg-[#ede5d9] h-32 w-full text-[#194142] relative'>
-      <div className='flex justify-between w-[90%] mx-auto md:py-[3%] py-[7%] px-[6%] md:px-0 items-center border-b border-solid border-black'>
+      <div className='flex justify-between w-[90%] mx-auto md:py-[3%] py-[7%] px-[6%] md:px-0 items-center border-b border-solid sticky top-[20px] border-black'>
         <Link to={'/'}>
           <h2 className='text-xl hidden xl:block' >Home</h2>
         </Link>
@@ -34,11 +34,11 @@ function NavStore() {
           <li className=' hidden xl:block'>Contact</li>
           <li className=' hidden xl:block'>Store</li>
           <div className='relative'>
-            <div className='cursor-pointer flex gap-3' onClick={() => setOpen(!open)}>
+            <div className='cursor-pointer flex gap-3' >
+              <ShoppingBagOutlinedIcon onClick={() => setOpen(!open)} />
               <Link to={'/store'}>
-                <li className=' xl:hidden'>store</li>
+                <li className=' hidden'>store</li>
               </Link>
-              <ShoppingBagOutlinedIcon />
             </div>
             {cartItemCount > 0 && (
               <div className='absolute min-w-3 min-h-3 rounded-md bg-green-800 top-1 right-[-12px] text-white text-xs flex items-center justify-center'>

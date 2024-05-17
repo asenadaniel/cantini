@@ -32,7 +32,9 @@ function StoreCard() {
 
   return (
     <div className='text-black bg-[#ede5d9] h-fit md:h-fit'>
-      <NavStore />
+      <div className=' sticky top-0'>
+        <NavStore />
+      </div>
       <div className='flex w-full px-[8%] py-[3%] justify-center'>
         <div className='flex-col justify-between gap-9 xl:flex-row flex '>
           <div className=' mb-7'>

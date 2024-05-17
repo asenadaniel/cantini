@@ -1,14 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function MobileHeader() {
   return (
     <div className='w-full h-[100vh] background  text-[#EDE5D9]  '>
       <div className='w-[90%]  mx-auto h-full   flex flex-col gap-10'>
         <div className=' flex justify-between py-[20px] items-center'>
-          <p className=' hover:text-orange-700'>Menu</p>
+          <p className=' hover:text-orange-700 text-xl'>Menu</p>
           <h2 className=' text-2xl cursor-pointer'>Cantini</h2>
           <ul className=' flex gap-8'>
-            <li>Contact</li>
+            <Link to={'/store'}>
+              <li className=' text-xl'>Store</li>
+            </Link>
 
           </ul>
         </div>
