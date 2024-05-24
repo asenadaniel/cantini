@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Store() {
   const { cantini_list, getTotalAmount } = useContext(storeContext)
   return (
-    <div className=' text-black bg-[#ede5d9]'>
+    <div className=' text-black bg-[#ede5d9] pb-[100px]'>
       <div className=' sticky top-0'>
         <NavStore />
       </div>
