@@ -12,7 +12,9 @@ function Header() {
           </Link>
           <h2 className=' text-4xl cursor-pointer'>Cantini</h2>
           <ul className=' flex gap-8'>
-            <li className=' text-xl'>Contact</li>
+            <Link to={'/contact'}>
+              <li className=' text-xl'>Contact</li>
+            </Link>
             <Link to={'/store'}>
               <li className=' text-xl'>Store</li>
             </Link>

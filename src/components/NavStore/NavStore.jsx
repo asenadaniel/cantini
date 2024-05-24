@@ -31,7 +31,9 @@ function NavStore() {
           <h1 className='text-3xl'>Cantini</h1>
         </Link>
         <ul className='flex gap-9 text-xl'>
-          <li className=' hidden xl:block'>Contact</li>
+          <Link to={'/contact'}>
+            <li className=' hidden xl:block'>Contact</li>
+          </Link>
           <li className=' hidden xl:block'>Store</li>
           <div className='relative'>
             <div className='cursor-pointer flex gap-3' >
